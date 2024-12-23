@@ -1,0 +1,22 @@
+            - name: Create GitHub App Token
+  uses: actions/create-github-app-token@v1.11.1
+  with:
+    # GitHub App ID
+    app-id: # optional
+    # GitHub App ID
+    app_id: # optional
+    # GitHub App private key
+    private-key: # optional
+    # GitHub App private key
+    private_key: # optional
+    # The owner of the GitHub App installation (defaults to current repository owner)
+    owner: # optional
+    # Comma or newline-separated list of repositories to install the GitHub App on (defaults to current repository if owner is unset)
+    repositories: # optional
+    # If truthy, the token will not be revoked when the current job is complete
+    skip-token-revoke: # optional
+    # If truthy, the token will not be revoked when the current job is complete
+    skip_token_revoke: # optional
+    # The URL of the GitHub REST API.
+    github-api-url: # optional, default is ${{ github.api_url }}
+          
